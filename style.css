@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'League Spartan',sans-serif;
+    width: auto;
+    background: url(./images/bg-pattern-top-desktop.svg),url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 1000px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+div:nth-of-type(3){
+    grid-column:1/3 ;
+}
+.introduction{
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    font-family: 'League Spartan',sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    width: 200px;
+    color:  hsl(300, 43%, 22%);
+}
+.descri{
+    width: 390px;
+    margin-top: 40px;
+    color: hsl(303, 10%, 53%);
+}
+.rating{
+    margin-left: 4.375rem;
+    display: flex;
+    flex-direction: column;
+}
+.one span{
+    color: rgba(220, 165, 13, 0.813);
+}
+.one{
+    width: 300px;
+    height: 40px;
+    background: hsl(300, 12%, 88%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 7px;
+    
+}
+.one:nth-of-type(2){
+    align-self: center;
+}
+.one:nth-of-type(3){
+    align-self: end;
+}
+.reviews{
+    margin-top: 60px;
+    display: flex;
+}
+.person1{
+    margin: 15px;
+    background: hsl(300, 43%, 22%);
+    width: 300px;
+    height:190px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.name{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.status{
+    color: hsl(333, 80%, 67%);
+}
+.person-info{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom:20px;
+}
+.person-info img{
+    width: 30px;
+    border-radius: 60px;
+    margin-right: 10px;
+}
+.det{
+    padding: 0 20px;
+    /* margin-left: 20px; */
+    color: hsl(0, 0%, 100%);
+    font-size: 14.3px;
+    opacity: 90%;
+}
+.person1:nth-of-type(1){
+    margin-left: 0;
+}
+.person1:nth-of-type(2){
+    align-self: center;
+}
+.person1:nth-of-type(3){
+    margin-right: 0;
+    align-self: end;
+}
